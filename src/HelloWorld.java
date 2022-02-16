@@ -4,22 +4,25 @@ public class HelloWorld {
         System.out.print("print method: Hello World \n"); // if .print is used it will automatically concat to previous printed line. *\n* newline character
 
 
+
+
         // 2 -1 Create an int variable named myFavoriteNumber and assign your favorite number to it, then print it out to the console.
         int myFavoriteNumber = 88;
         System.out.println("My favorite number is: " + myFavoriteNumber);
+
         // 2 -2 Create a String variable named myString and assign a string value to it, then print the variable out to the console.
-//        String myString = "Does this work?";
-//        System.out.println("I'm just asking a question: " + myString);
+        String myString = "Does this work?";
+        System.out.println("I'm just asking a question: " + myString);
 
         // 2 - 3 Change your code to assign a character value to myString. What do you notice?
-//        char myString = 88;
-//        System.out.print("Character Value: "); // use case for print & println method
-//        System.out.println(myString);
+        char myString2 = 88;
+        System.out.print("Character Value: "); // use case for print & println method
+        System.out.println(myString2);
 
         // 2 - 4 Change your code to assign the value 3.14159 to myString. What happens?
-        double myString = 3.14159;
+        double myString3 = 3.14159;
         System.out.print("Double Value: ");
-        System.out.println(myString);
+        System.out.println(myString3);
 
         // 2 - 5 Declare an long variable named myNumber, but do not assign anything to it. Next try to print out myNumber to the console. What happens?
 //        long myNumber = ;
@@ -32,7 +35,7 @@ public class HelloWorld {
 //        System.out.println(myNumber1); // error message received -- java: incompatible types: possible lossy conversion from double to long
 
         // 2 - 7 Change your code to assign the value 123L (Note the 'L' at the end) to myNumber.
-        long myNumber2 = 123L;
+        long myNumber2 = 123L; // add "L" to force to a float -- if not, won't run
         System.out.print("Value #2 changed to 123L: ");
         System.out.println(myNumber2);
 
@@ -42,7 +45,7 @@ public class HelloWorld {
         System.out.println(myNumber3);
 
         // 2 - 9 Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
-        double myNumber4 = 3.14;
+        float myNumber4 = 3.14f; // add "f" to force to a float -- if not, won't run
         System.out.print("Value #4 changed to 3.14: ");
         System.out.println(myNumber4); //error message received -- java: incompatible types: possible lossy conversion from double to float
 
@@ -62,8 +65,17 @@ public class HelloWorld {
         System.out.print("Original Value: ");
         System.out.println(z);
 
+        // 2 - 11 Try to create a variable named class. What happens? **It doesn't work**
+//        String class = "What does this do?";
+//        System.out.println(class);
 
+        // 2 - 12 Object is the most generic type in Java. You can assign any value to a variable of type Object. What do you think will happen when the following code is run?
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+//        int three = (int) o; // Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+//        int three = (int) "three"; // java: variable three is already defined in method main(java.lang.String[])
 
+        // 2 - 13 Rewrite the following expressions using the relevant shorthand assignment operators:
     }
 }
 
