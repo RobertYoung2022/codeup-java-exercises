@@ -91,19 +91,6 @@ public class SyntaxTypesVariables {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //        //  BONUS - Thank You Andrew
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("Enter the length of your room: ");
