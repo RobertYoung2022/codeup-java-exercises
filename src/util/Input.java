@@ -1,11 +1,13 @@
 package util;
 
-import java.util.Scanner;
-
 public class Input {
-    private Scanner scanner;
 
-    Scanner scannerObject = new Scanner(System.in);
+    public String hobby;
+    public boolean favHobby;
+    public int rateHobby;
+    public int rankTopFive;
+    public double hobbyCost;
+    public double hobbyTotal;
 
 }
 
