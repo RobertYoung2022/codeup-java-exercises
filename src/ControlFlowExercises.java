@@ -24,7 +24,7 @@ public class ControlFlowExercises {
 //        do {
 //            System.out.println("this is j at: " + j);
 //            j*=j;
-//        } while (j < 1000000); // notice: for this volume of number, you have to change type of the variable to correct parameters.
+//        } while (j < 1000000);
 
 //        for (int j = 100; j >= -10; j-=5 ) {
 //            System.out.println("j is at: " + j);
@@ -34,31 +34,23 @@ public class ControlFlowExercises {
 //            System.out.println("j is at: " + j);
 //        }
 
-        // ex 2: FIZZBUZZ
-        /*One of the most common interview questions for entry-level programmers is the FizzBuzz test.
-        Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+        // FIZZBUZZ
 
-        Write a program that prints the numbers from 1 to 100.
-        For multiples of three: print “Fizz” instead of the number.
-        For the multiples of five: print “Buzz”.
-        For numbers which are multiples of both three and five: print “FizzBuzz”.
+        int i = 0;
+        for (i = 0; i <= 100; i++){
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            }
+            System.out.println(i);
+        }
 
-         */
-//        int i = 0;
-//        for (i = 0; i <= 100; i++){
-//            if (i % 3 == 0 && i % 5 == 0) {
-//                System.out.println("FizzBuzz");
-//            }
-//            else if (i % 3 == 0) {
-//                System.out.println("Fizz");
-//            }
-//            else if (i % 5 == 0) {
-//                System.out.println("Buzz");
-//            }
-//            System.out.println(i);
-//        }
-
-        // ex 3: DISPLAY A TABLE OF POWERS
+        // DISPLAY A TABLE OF POWERS
         Scanner scanner = new Scanner(System.in);
 //
         String userChoice;
@@ -82,7 +74,7 @@ public class ControlFlowExercises {
             System.out.println("Okay, that's enough for today...");
         }
 
-        // ex 4: CONVERT GIVEN NUMBER GRADES INTO LETTER GRADES
+        // CONVERT GIVEN NUMBER GRADES INTO LETTER GRADES
 
         String answer;
         do {
@@ -122,24 +114,5 @@ public class ControlFlowExercises {
             System.out.println("Okay, we'll stop here...");
         }
 
-    } // <--------- end of main
-} // <--------- end of class
-
-
-
-// ---------->  NOTES ON LOOPS  <----------
-//        for(int i = 0; i <= 10; i++){
-//            System.out.println("i is at: " + i);
-//        }
-
-//        int i = 0;
-//        while (i < 10) {
-//            System.out.println("i is: " + i);
-//            i++;
-//        }
-
-//        int i = 0;
-//        do {
-//            System.out.println("i is at: " + i);
-//            i++;
-//        } while (i< 10);
+    }
+}
