@@ -12,8 +12,12 @@ public class MethodsExercises {
         System.out.println(divide(7, 3));
         System.out.print("Modulus: ");
         System.out.println(modulus(7, 3));
-        System.out.print("Exercise #2: ");
-        System.out.println(getInteger());
+//        System.out.print("Exercise #2: ");
+//        System.out.println(getInteger());
+        System.out.print("Exercise #3: ");
+        factorial();
+        System.out.print("Exercise #4: ");
+        System.out.println(recursion(4));
     }
 
     // ADDITION
@@ -41,25 +45,58 @@ public class MethodsExercises {
         return addNum1 % addNum2;
     }
 
-//    public static Scanner mathScan = new Scanner(System.in);
+    // GET INTEGER
+//    public static int getInteger() {
+//        Scanner scanner = new Scanner(System.in);
+//        boolean isTrue = true;
+//
+//        System.out.print("Enter a number between 1 and 10: ");
+//        if (isTrue) {
+//            int userInput = scanner.nextInt();
+//            if (userInput >= 1 & userInput <= 10) {
+//                System.out.println("Correct, you entered: " + userInput);
+//
+//            } else {
+//                isTrue = false;
+//                System.out.println("Your entry is not valid");
+//                getInteger();
+//            }
+//        }
+//        return getInteger();
+//    }
 
-    public static int getInteger() {
+
+    // FACTORIAL
+    public static void factorial() {
         Scanner scanner = new Scanner(System.in);
-        boolean isTrue = true;
 
-        System.out.print("Enter a number between 1 and 10: ");
-        while (isTrue) {
-            int userInput = scanner.nextInt();
-            if (userInput >= 1 && userInput <= 10) {
-                System.out.println("You entered: " + userInput);
-                isTrue = false;
+        System.out.print("Enter a number between 1 and 20: ");
+        int userInput = scanner.nextInt();
+        if (userInput >= 1 && userInput <= 20) {
+            System.out.println("You entered: " + userInput);
+            System.out.print("Do you want to continue? (y or n): ");
+            String userContinue = scanner.next();
+            if (!userContinue.equals("y")) {
+                System.out.println("Have an average day.");
             } else {
-                System.out.println("Your entry is not valid");
-                System.out.print("Enter a number between 1 and 10: ");
+                long sum = 1;
+                for (long i = 1; i <= userInput; i++) {
+                    System.out.printf("%d%s%d%n", i, "! = ", (sum *= i));
+                }
             }
+        } else {
+            System.out.println("Your entry is not valid");
         }
+    }
 
-        System.out.print();
+    //factorial with recursion
+
+    public static int recursion(int num) {
+        if (num == 1) {
+            return 1;
+        } else {
+            return num * recursion(num - 1);
+        }
     }
 }
 
