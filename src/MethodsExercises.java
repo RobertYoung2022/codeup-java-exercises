@@ -59,7 +59,7 @@ public class MethodsExercises {
 //            } else {
 //                isTrue = false;
 //                System.out.println("Your entry is not valid");
-//                getInteger();
+//
 //            }
 //        }
 //        return getInteger();
@@ -89,13 +89,45 @@ public class MethodsExercises {
         }
     }
 
-    //factorial with recursion
+    //RECURSION
 
     public static int recursion(int num) {
         if (num == 1) {
             return 1;
         } else {
             return num * recursion(num - 1);
+        }
+    }
+
+    //  DICE GAME
+
+    public static void dice() {
+
+        Scanner diceGame = new Scanner(System.in);
+
+        System.out.print("How many sides do your dice have? ");
+        int diceSide = diceGame.nextInt();
+
+        System.out.print("Would you like to roll the dice? (yes/no)  ");
+        String diceRoll = diceGame.next();
+
+        boolean diceBoolean = true;
+
+        while (diceBoolean) {
+            int randomNum = (int)(Math.random() * diceSide)+1;
+            int randomNum2 = (int)(Math.random() * diceSide)+1;
+            if (!diceRoll.equals("yes")) {
+                System.out.println("No dice for you!");
+                diceBoolean = false;
+            } else {
+                System.out.println(randomNum);
+                System.out.println(randomNum2);
+                System.out.print("Would you like to roll the dice again? (yes/no)  ");
+                String rollAgain = diceGame.next();
+                if(!rollAgain.equals("yes")){
+                    diceBoolean = false;
+                }
+            }
         }
     }
 }
