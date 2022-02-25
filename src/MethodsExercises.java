@@ -12,6 +12,8 @@ public class MethodsExercises {
         System.out.println(divide(7, 3));
         System.out.print("Modulus: ");
         System.out.println(modulus(7, 3));
+        System.out.print("Exercise #2: ");
+        System.out.println(getInteger());
     }
 
     // ADDITION
@@ -25,7 +27,7 @@ public class MethodsExercises {
     }
 
     // MULTIPLICATION
-    public static long multiply(int addNum1, int addNum2) {
+    public static double multiply(int addNum1, int addNum2) {
         return addNum1 * addNum2;
     }
 
@@ -39,17 +41,25 @@ public class MethodsExercises {
         return addNum1 % addNum2;
     }
 
-    public static Scanner mathScan = new Scanner(System.in);
+//    public static Scanner mathScan = new Scanner(System.in);
 
     public static int getInteger() {
-        System.out.print("Please enter a number 1-10: ");
-        int userInput = mathScan.nextInt();
-        if (userInput >= 1 && userInput < 10) {
+        Scanner scanner = new Scanner(System.in);
+        boolean isTrue = true;
 
+        System.out.print("Enter a number between 1 and 10: ");
+        while (isTrue) {
+            int userInput = scanner.nextInt();
+            if (userInput >= 1 && userInput <= 10) {
+                System.out.println("You entered: " + userInput);
+                isTrue = false;
+            } else {
+                System.out.println("Your entry is not valid");
+                System.out.print("Enter a number between 1 and 10: ");
+            }
         }
-//        else ()
-        return userInput;
-    }
 
+        System.out.print();
+    }
 }
 
