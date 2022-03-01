@@ -18,6 +18,23 @@ public class ServerNameGenerator {
     }
 
 
+//    public static String[] generateRandomWords(int numberOfWords)
+//    {
+//        String[] randomStrings = new String[numberOfWords];
+//        Random random = new Random();
+//        for(int i = 0; i < numberOfWords; i++)
+//        {
+//            char[] word = new char[random.nextInt(8)+3];
+//            // words of length 3 through 10. (1 and 2 letter words are boring.)
+//            for(int j = 0; j < word.length; j++)
+//            {
+//                word[j] = (char)('a' + random.nextInt(26));
+//            }
+//            randomStrings[i] = new String(word);
+//        }
+//        return randomStrings;
+//    }
+
     public static void main(String[] args) {
 
         // iterate through adjectives object
@@ -33,11 +50,15 @@ public class ServerNameGenerator {
 //            System.out.print("Noun object: ");
 //            System.out.println(noun[i]);
 //        }
-        System.out.print("Noun object: ");
-        System.out.println(randomWord(noun));
-//        System.out.println();
-        System.out.print("Adjective object: ");
-        System.out.println(randomWord(adjective));
+        System.out.print("Here is your server name: ");
+        System.out.print(randomWord(noun));
+        System.out.print("-");
+        System.out.print(randomWord(adjective));
+
+
+        System.out.println();
+//        System.out.println(randomWord(generateRandomWords(3)));
     }
+
 
 }
