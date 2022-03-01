@@ -19,5 +19,11 @@ public class JavaWarmups {
         oddEven[1] = even;
         System.out.print("should be: ");
         System.out.println(Arrays.toString(oddEven));
+
+        String[] languages = {"French", "Portuguese", "Dutch"};
+        System.out.println(Arrays.toString(languages));
+        Arrays.fill(languages, "French");
+        System.out.println(Arrays.toString(languages));
+        // changing the existing/original array
     }
 }

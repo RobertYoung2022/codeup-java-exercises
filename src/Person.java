@@ -1,12 +1,18 @@
-class Person {
+public class Person {
     private String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
     public String getName(){
 //TODO: return the person's name
-      return name;
+      return this.name;
     }
 
     public void setName(String name){
 //TODO: change the name field to the passed value
+        this.name = name;
     }
 
 
@@ -17,10 +23,12 @@ class Person {
     }
 
     public static void main(String[] args) {
-        Person rick = new Person();
+        Person rick = new Person("Rob");
 //        rick.firstName = "Rick";
 //        rick.lastName = "Sanchez";
         System.out.println(rick.sayHello());
         // prints "Hello from Rick Sanchez!"
+
+
     }
 }

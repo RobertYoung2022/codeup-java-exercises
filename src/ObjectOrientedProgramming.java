@@ -2,10 +2,10 @@ public class ObjectOrientedProgramming {
 
 
     public static void main(String[] args) {
-        Person Bobby = new Person();
+//        Person Bobby = new Person();
 //        Bobby.firstName = "Bobby";
 //        Bobby.lastName = "Young";
-        System.out.println(Bobby.sayHello());
+//        System.out.println(Bobby.sayHello());
         // prints "Hello from Bobby Young!"
 
 
