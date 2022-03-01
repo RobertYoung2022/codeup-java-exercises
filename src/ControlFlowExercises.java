@@ -59,11 +59,11 @@ public class ControlFlowExercises {
             int userInput = scanner.nextInt();
             System.out.printf("your number is: %s.%n", userInput);
 
-            for (int i = 1; i <= userInput; i++) {
-                Formatter format = new Formatter();
-                format.format("%4d %4d %4d", i, i * i, i * i * i);
-                System.out.println(format);
-            }
+//            for (int i = 1; i <= userInput; i++) {
+//                Formatter format = new Formatter();
+//                format.format("%4d %4d %4d", i, i * i, i * i * i);
+//                System.out.println(format);
+//            }
 
             System.out.println("Would you like to continue?: [y/N]");
             userChoice = scanner.next();
