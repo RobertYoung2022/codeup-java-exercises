@@ -28,12 +28,12 @@ public class ArraysExercises {
         // array object
         Person[] people = new Person[3];
 
-        people[0] = new Person("Robert");
+        people[0] = new Person("Kyle");
         people[1] = new Person("Gerald");
         people[2] = new Person("Andrew");
 
         // Single person object
-        Person varMe = new Person("Kyle");
+        Person varMe = new Person("Robert");
 
         // calling object/ single object to print
         addPerson(people, varMe);
