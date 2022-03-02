@@ -1,6 +1,37 @@
+
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("println method: Hello World");
+        System.out.println("Hello World");
+
+        // 1.
+        int myFavoriteNumber = 8;
+        System.out.println("myFavoriteNumber = " + myFavoriteNumber);
+
+        // 2.
+        String myString = "I AM A DEVELOPER";
+        System.out.println("myString = " + myString);
+
+        // 3.
+        myString = "You will SUCCEED!";
+        System.out.println(myString); // the new value reprinted over the old
+
+        // 4.
+//        myString = 3.14159;
+//        System.out.println(myString); // java: incompatible types: double cannot be converted to java.lang.String
+
+        // 5 - 8.
+            // java: illegal start of expression - if no value is input
+            // java: incompatible types: possible lossy conversion from double to long - when using the value 3.14
+        long myNumber = 123;
+        System.out.println(myNumber);
+
+        // 9.
+            // java: incompatible types: possible lossy conversion from double to float - when using the value 3.14
+            // follow value with f to force type match
+        float myNumber2 = 3.14f;
+        System.out.println(myNumber2);
+    }
+/*        System.out.println("println method: Hello World");
         System.out.print("print method: Hello World \n"); // if .print is used it will automatically concat to previous printed line. *\n* newline character
 
 
@@ -76,7 +107,7 @@ public class HelloWorld {
 //        int three = (int) "three"; // java: variable three is already defined in method main(java.lang.String[])
 
         // 2 - 13 Rewrite the following expressions using the relevant shorthand assignment operators:
-    }
+    }*/
 }
 
 
