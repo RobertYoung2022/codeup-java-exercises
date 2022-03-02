@@ -5,11 +5,11 @@ public class ArraysExercises {
     // Array for adding new person
     public static Person[] addPerson(Person[] people, Person single) { //  Person[] people = type of parameter then name
 // Person[] = whatever you want to return   addPerson = name of variable
-        // copy array and adding +1
-        Person[] newMember = Arrays.copyOf(people, people.length +1);
+        // copy array and adding + 1
+        Person[] newMember = Arrays.copyOf(people, people.length + 1);
 
         // spot in the array
-        newMember[newMember.length -1] = single;
+        newMember[newMember.length - 1] = single;
 
         for(Person personR: newMember) {
             System.out.println(personR.getName());

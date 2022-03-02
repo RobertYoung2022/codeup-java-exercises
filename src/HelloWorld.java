@@ -20,16 +20,50 @@ public class HelloWorld {
 //        System.out.println(myString); // java: incompatible types: double cannot be converted to java.lang.String
 
         // 5 - 8.
-            // java: illegal start of expression - if no value is input
-            // java: incompatible types: possible lossy conversion from double to long - when using the value 3.14
+        // java: illegal start of expression - if no value is input
+        // java: incompatible types: possible lossy conversion from double to long - when using the value 3.14
         long myNumber = 123;
         System.out.println(myNumber);
 
         // 9.
-            // java: incompatible types: possible lossy conversion from double to float - when using the value 3.14
-            // follow value with f to force type match
+        // java: incompatible types: possible lossy conversion from double to float - when using the value 3.14
+        // follow value with f to force type match
         float myNumber2 = 3.14f;
         System.out.println(myNumber2);
+
+        // 10.
+//        int x = 5;
+//        System.out.println(x++); // 5
+//        System.out.println(x); // 6
+
+        int x = 5;
+        System.out.println(++x); // 6
+        System.out.println(x); // 6
+
+
+        // 11.
+        // java: not a statement - creating a variable called class
+//        String class = "What does this do?";
+//        System.out.println(class);
+
+        // 12.
+//        String theNumberThree = "three";
+//        Object o = theNumberThree;
+//        int three = (int) "three";
+//        // when int three = (int) o;
+//// Exception in thread "main" java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+//        // when int three = int "three"
+//        //java: incompatible types: java.lang.String cannot be converted to int
+//        System.out.println(three);
+
+        // 13.
+        int y = 4;
+        y += 5;
+        System.out.println("Value of y: " + y);
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
     }
 /*        System.out.println("println method: Hello World");
         System.out.print("print method: Hello World \n"); // if .print is used it will automatically concat to previous printed line. *\n* newline character

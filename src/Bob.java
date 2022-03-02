@@ -16,9 +16,8 @@ public class Bob {
         // kid repsonse again
         // restart y/N
 
-
-//        System.out.print("Are you a brat?");
-//        System.out.println("Sure.' if you ask him a question.");
+        //   System.out.print("Are you a brat?");
+        //   System.out.println("Sure.' if you ask him a question.");
 
         String kidResponse1 = "Sure?";
         String kidResponse2 = "Whoa, chill out!";

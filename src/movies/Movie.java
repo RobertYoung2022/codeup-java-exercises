@@ -7,7 +7,9 @@ public class Movie {
     private String categoryName;
 
 
-    // constructor sets both
+    // constructor sets both✅
+
+    //Constructor format - Method aka Function
     public Movie(String movieName, String categoryName) {
         this.movieName = movieName;
         this.categoryName = categoryName;
