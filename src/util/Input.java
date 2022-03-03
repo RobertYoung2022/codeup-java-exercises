@@ -1,3 +1,4 @@
+/*
 package util;
 
 import java.util.Scanner;
@@ -8,11 +9,11 @@ public class Input {
 
     // constructor
     public Input() {
-        this.scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
     }
 
     String getString() {
-
+        System.out.println("Enter a string: ");
         return this.scanner.nextLine();
     }
 
@@ -47,12 +48,63 @@ public class Input {
 
             return userDouble;
         }
-
             double getDouble() {
-                return (int) this.scanner.nextDouble();
+                return this.scanner.nextDouble();
             }
         }
+*/
+package util;
 
+import java.util.Scanner;
+
+public class Input {
+    private Scanner scanner;
+
+
+
+    public Input() {
+        scanner = new Scanner(System.in);
+    };
+    public String getString(){
+        System.out.println("Enter a String");
+        return scanner.nextLine();
+    };
+
+
+    boolean yesNo(){
+        String userInput = scanner.next();
+        return userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes");
+    };
+    int getInt(int min, int max){
+        int userInt;
+        do {
+            System.out.printf("enter a number between %d and %d ", min, max);
+            userInt = this.scanner.nextInt();
+        } while (userInt > max || userInt < min);
+        return userInt;
+    }
+    int getInt(){
+        return this.scanner.nextInt();
+
+    }
+    double getDouble(double min, double max){
+        Double userDouble;
+        do{
+            System.out.printf("please enter a decimal between %f and %f: %n", min,max);
+            userDouble =this.scanner.nextDouble();
+        }while (userDouble > max || userDouble < min);
+        return userDouble;
+
+
+    }
+    double getDouble(){
+        return this.scanner.nextDouble();
+
+    }
+
+
+
+}
 
 
 
