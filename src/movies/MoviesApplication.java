@@ -6,7 +6,7 @@ public class MoviesApplication {
     public static void main(String[] args) {
 
         // main - running applications(from class) aka entry point to application
-            // calling methods, objects,
+            // calling methods, objects
 
         // Give the user a list of options for viewing all the movies or viewing movies by category.
 
