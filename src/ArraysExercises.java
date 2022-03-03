@@ -23,8 +23,6 @@ public class ArraysExercises {
 ////        System.out.println(numbers); // [I@6bdf28bb
 
 
-        // 1 .
-
         // array object
         Person[] people = new Person[3];
 

@@ -17,27 +17,26 @@ public class ServerNameGenerator {
         return pickedWord[random];
     }
 
-
-//    public static String[] generateRandomWords(int numberOfWords)
-//    {
-//        String[] randomStrings = new String[numberOfWords];
-//        Random random = new Random();
-//        for(int i = 0; i < numberOfWords; i++)
-//        {
-//            char[] word = new char[random.nextInt(8)+3];
-//            // words of length 3 through 10. (1 and 2 letter words are boring.)
-//            for(int j = 0; j < word.length; j++)
-//            {
-//                word[j] = (char)('a' + random.nextInt(26));
-//            }
-//            randomStrings[i] = new String(word);
-//        }
-//        return randomStrings;
-//    }
+/*    public static String[] generateRandomWords(int numberOfWords)
+    {
+        String[] randomStrings = new String[numberOfWords];
+        Random random = new Random();
+        for(int i = 0; i < numberOfWords; i++)
+        {
+            char[] word = new char[random.nextInt(8)+3];
+            // words of length 3 through 10. (1 and 2 letter words are boring.)
+            for(int j = 0; j < word.length; j++)
+            {
+                word[j] = (char)('a' + random.nextInt(26));
+            }
+            randomStrings[i] = new String(word);
+        }
+        return randomStrings;
+    }*/
 
     public static void main(String[] args) {
 
-        // iterate through adjectives object
+         // iterate through adjectives object
 //        for (int i = 0; i < adjective.length; i += 1) {
 //            System.out.print("Adjective object: ");
 //            System.out.println(adjective[i]);
@@ -45,11 +44,14 @@ public class ServerNameGenerator {
 
         System.out.println();
 
-        // iterate through nouns object
+         // iterate through nouns object
 //        for (int i = 0; i < noun.length; i += 1) {
 //            System.out.print("Noun object: ");
 //            System.out.println(noun[i]);
 //        }
+
+        System.out.println();
+
         System.out.print("Here is your server name: ");
         System.out.print(randomWord(noun));
         System.out.print("-");
