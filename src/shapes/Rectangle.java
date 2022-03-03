@@ -19,7 +19,7 @@ public class Rectangle {
     }
 
     static int getPerimeter() {
-        return (2 * rectLength) + (2 * rectWidth);
+        return (2 * rectLength) + (2 * rectWidth); // 2 * (rectLength + rectWidth);
     }
 
     public static void main(String[] args) {
