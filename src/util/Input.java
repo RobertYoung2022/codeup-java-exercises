@@ -87,7 +87,7 @@ public class Input {
         return this.scanner.nextInt();
 
     }
-    double getDouble(double min, double max){
+   public double getDouble(double min, double max){
         Double userDouble;
         do{
             System.out.printf("please enter a decimal between %f and %f: %n", min,max);
@@ -97,7 +97,7 @@ public class Input {
 
 
     }
-    double getDouble(){
+    public double getDouble(){
         return this.scanner.nextDouble();
 
     }
