@@ -3,14 +3,14 @@ package movies;
 public class Movie {
 
     // private fields for name and category✅
-    private String movieName;
-    private String categoryName;
+    private String name;
+    private String category;
 
 
     // constructor sets both✅
     public Movie(String movieName, String categoryName) {
-        this.movieName = movieName;
-        this.categoryName = categoryName;
+        this.name = movieName;
+        this.category = categoryName;
     }
     //Constructor format - Method aka Function
 
@@ -18,21 +18,21 @@ public class Movie {
     // create methods to access these properties and change them (getters and setters)✅
     public String getMovieName() {
 
-        return movieName;
+        return name;
     }
 
     public void setMovieName(String movieName) {
 
-        this.movieName = movieName;
+        this.name = movieName;
     }
 
     public String getCategoryName() {
 
-        return categoryName;
+        return category;
     }
 
     public void setCategoryName(String categoryName) {
 
-        this.categoryName = categoryName;
+        this.category = categoryName;
     }
 }

@@ -66,7 +66,7 @@ public class Input {
         scanner = new Scanner(System.in);
     };
     public String getString(){
-        System.out.println("Enter a String");
+        System.out.println("Enter your choice: ");
         return scanner.nextLine();
     };
 
