@@ -48,10 +48,20 @@ public class ConsoleExercises {
         System.out.print("What is the length of the classroom: ");
         String length = codeup.nextLine();
 
+        // Parse string to int
         int roomWidth = Integer.parseInt(width);
         int roomLength = Integer.parseInt(length);
 
-        System.out.println("The area of the Codeup room is: " + (roomWidth * roomLength));
+
+        // testing the outputs
+//        System.out.println("The area of the Codeup room is: " + (roomWidth * roomLength) + "sq ft");
+
+        // 2. Area and Perimeter
+
+        System.out.println("Area of the classroom is " + (roomLength * roomWidth));
+        System.out.println("Perimeter of the classroom is " + (2 * roomLength) + (2 * roomWidth));
+
+
 
         // ex.
 //        Scanner scanner = new Scanner(System.in);
