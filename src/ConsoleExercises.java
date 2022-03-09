@@ -1,7 +1,68 @@
-//import java.util.Scanner;
+import java.util.Scanner;
+
+public class ConsoleExercises {
+    public static void main (String[] args) {
+
+
+        // 1.
+        double pi = 3.14159;
+//        System.out.format("The value of pi is approximately = %f", pi);
+
+        System.out.println();
+
+        // 1 - 1. Scanner
+        Scanner myScan = new Scanner(System.in);
+        System.out.print("Enter an Integer: ");
+        int userInt = myScan.nextInt();
+        System.out.println("userInt = " + userInt);
+
+
+        // 1 - 2. 
+        System.out.print("Enter 1st word: ");
+        String userPhrase = myScan.next();
+        System.out.print("Enter 2nd word: ");
+        String userPhrase2 = myScan.next();
+        System.out.print("Enter 3rd word: ");
+        String userPhrase3 = myScan.next();
+
+        System.out.println("userPhrase = " + userPhrase);
+        System.out.println("userPhrase2 = " + userPhrase2);
+        System.out.println("userPhrase3 = " + userPhrase3);
+
+
+        // 1 - 3/4.
+        Scanner userWords = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String userSentence = userWords.nextLine();
+        System.out.println("userSentence = " + userSentence);
+
+
+        // 1 - 1. Calculate
+
+        // Prompt the user to enter values of length and width of a classroom at Codeup
+        Scanner codeup = new Scanner(System.in);
+
+        // Use the nextLine method each time you need to get user input.
+        System.out.print("What is the width of the classroom: ");
+        String width = codeup.nextLine();
+        System.out.print("What is the length of the classroom: ");
+        String length = codeup.nextLine();
+
+        int roomWidth = Integer.parseInt(width);
+        int roomLength = Integer.parseInt(length);
+
+        System.out.println("The area of the Codeup room is: " + (roomWidth * roomLength));
+
+        // ex.
+//        Scanner scanner = new Scanner(System.in);
 //
-//public class ConsoleExercises {
-//    public static void main (String[] args) {
+//        System.out.print("Enter something: ");
+//        String userInput = scanner.nextLine();
+//
+//        System.out.println("You entered: --> \"" + userInput + "\" <--");
+
+
+
 //        // ex 1a:
 //        double pi = 3.14159;
 //        System.out.printf("The value of pi is approximately, %.4s %n", pi); // decimal 4s after modulus take 4 spaces of integer.
@@ -63,5 +124,5 @@
 //        String userRoomHeight = scanner.nextLine();
 //        double userRoomHeightParsed = Double.parseDouble(userRoomHeight);
 //        System.out.printf("the volume of your room is: %.4s cubic feet. %n", (userRoomHeightParsed * userRoomLengthParsed * userRoomWidthParsed));
-//    }
-//}
+    }
+}

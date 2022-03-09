@@ -45,8 +45,8 @@ public class HelloWorld {
 
         // 11.
         // java: not a statement - creating a variable called class
-        String class = "What does this do?";
-        System.out.println(class);
+//        String class = "What does this do?";
+//        System.out.println(class);
 
         // 12.
 //        String theNumberThree = "three";
