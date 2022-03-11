@@ -13,7 +13,7 @@ public class Square extends Quadrilateral {
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
     @Override

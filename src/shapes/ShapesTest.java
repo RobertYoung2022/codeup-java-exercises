@@ -8,8 +8,12 @@ public class ShapesTest {
     // Test your code by creating instances of both Square and Rectangle and assigning them to myShape so you can display the shape's area and perimeter.
     public static void main(String[] args) {
         myShape = new Square(5, 3);
-        System.out.println(myShape.getPerimeter());
-//        myShape = new Rectangle();
+        System.out.println("My rectangle perimeter: " + myShape.getPerimeter());
+        System.out.println("My rectangle area: " + myShape.getArea());
+
+        myShape = new Rectangle(6,5);
+        System.out.println("My square perimeter: " + myShape.getPerimeter());
+        System.out.println("My square area: " + myShape.getArea());
     }
 
 

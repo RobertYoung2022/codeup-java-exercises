@@ -12,7 +12,7 @@ public class Rectangle extends Quadrilateral implements Measurable {
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
     @Override
