@@ -22,13 +22,19 @@ public class Person {
         return null;
     }
 
-    public static void main(String[] args) {
-        Person rick = new Person("Rob");
-//        rick.firstName = "Rick";
-//        rick.lastName = "Sanchez";
-        System.out.println(rick.sayHello());
-        // prints "Hello from Rick Sanchez!"
 
+
+    public static void main(String[] args) {
+//        Person rick = new Person("Rob");
+////        rick.firstName = "Rick";
+////        rick.lastName = "Sanchez";
+//        System.out.println(rick.sayHello());
+//        // prints "Hello from Rick Sanchez!"
+
+
+        // QUIZ - JAVA II
+        Employee emp = new Employee("Peter Gibbons", "IT");
+        System.out.println(emp.getName() + " works in " + emp.getDepartment());
 
     }
 }
