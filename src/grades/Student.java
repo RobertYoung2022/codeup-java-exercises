@@ -31,7 +31,7 @@ public class Student {
     public double getGradeAverage() {
         double total = 0;
         double avg;
-        for (int studentGrade : stuGrade) total = total + studentGrade;
+        for (int studentGrade : stuGrade) total = total + studentGrade; // ????
         avg = total / stuGrade.size();
         return avg;
     }
