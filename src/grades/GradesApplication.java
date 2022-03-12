@@ -27,6 +27,11 @@ public class GradesApplication {
         Larry.addGrade(90);
         Larry.addGrade(80);
         Larry.addGrade(100);
+
+        Student Max = new Student("Max");
+        Max.addGrade(84);
+        Max.addGrade(88);
+        Max.addGrade(87);
     }
 
 }
