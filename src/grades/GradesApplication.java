@@ -1,11 +1,10 @@
 package grades;
 
-import grocery.GroceryList;
 
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class GradesApplication extends GroceryList {
+public class GradesApplication {
     public static void main(String[] args) {
         // Inside the main method, create a HashMap named students.
         HashMap<String, Student> students = new HashMap<>();
