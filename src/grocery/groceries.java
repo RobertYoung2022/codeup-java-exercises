@@ -3,7 +3,6 @@ package grocery;
 import java.util.Scanner;
 
 public class groceries {
-    public String newItem;
 
 
     // A user should be prompted if they would like to create a grocery list.
@@ -23,8 +22,10 @@ public class groceries {
             String shopperReply = searchList.nextLine();
             if (shopperReply.equalsIgnoreCase("Y")) {
                 loop = true;
+                System.out.println("Enter new list items: ");
+
             } else {
-                System.out.println("Thank you... Have a great day!");
+                System.out.println("Thank you stopping by... See you soon!");
                 loop = false;
             }
             loop = false;
