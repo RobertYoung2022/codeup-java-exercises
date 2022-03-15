@@ -70,7 +70,7 @@ public class GradesApplication {
             String userReply = scanner.nextLine();
             if (userReply.equalsIgnoreCase("Y")) {
                 loop = true;
-            }   else {
+            } else {
                 System.out.println("Thank you... Have a great day!");
                 loop = false;
             }
