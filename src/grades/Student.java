@@ -18,18 +18,20 @@ public class Student {
     public String getName() {
         return stuName;
     }
+
     // adds the given grade to the grades property
     public void addGrade(int grade) {
         stuGrade.add(grade);
     }
+
     // returns the average of the students grades
-    public ArrayList<Integer> getStuGrade(){
+    public ArrayList<Integer> getStuGrade() {
         return stuGrade;
     }
 
 
     public double getGradeAverage() {
-        double total = 0;
+        double total = 0; // bucket to store the grades in
         double avg;
         for (int studentGrade : stuGrade) total = total + studentGrade; // ????
         avg = total / stuGrade.size();
