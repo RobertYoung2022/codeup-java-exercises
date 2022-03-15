@@ -62,28 +62,18 @@ public class GradesApplication {
             if (result == null) {
                 System.out.printf("No result found for %s", userInput);
             } else {
-                System.out.printf("Match found for Github username %s. %s is the name of the student. Here is their grade average : %.2s%n", userInput, result.getName(), result.getGradeAverage()); // have to add a space behind the username to get successfully results
+                System.out.printf("Match found for Github username %s \n%s is the name of the student. \nHere is their grade average : %.2s%n", userInput, result.getName(), result.getGradeAverage()); // have to add a space behind the username to get successfully results
             }
             System.out.println();
 
-            System.out.println("Search Again?");
+            System.out.println("Search Again? [Y/N]");
             String userReply = scanner.nextLine();
-            if (userReply.equalsIgnoreCase("yes")) {
+            if (userReply.equalsIgnoreCase("Y")) {
                 loop = true;
             }   else {
                 System.out.println("Thank you... Have a great day!");
                 loop = false;
             }
-
         }
-//        do {
-//            System.out.print("Good Morning, Teacher");
-//            System.out.println();
-//            System.out.println("Here are the GitHub usernames of our students:\n");
-//            System.out.println("Enter Student's Github username: ");
-//
-//        } while ();
-
-
     }
 }
