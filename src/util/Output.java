@@ -1,18 +1,22 @@
 package util;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Output {
-    public static void main(String[] args) {
-        Input input = new Input();
-        String myString = input.getString();
-        System.out.println("myString = " + myString);
-//
-//        System.out.println("Do you like pizza? ");
-//        boolean likePizza = input.yesNo();
-//        System.out.println("likePizza = " + likePizza);
-//
-//        System.out.println("Please enter a whole number: ");
+    public static void main(String[] args) throws Exception {
+
+        System.out.println(1); // runs
+        System.out.println(2); // runs
+        try { // still run --  might cause an error
+            System.out.println(0/0);
+            System.out.println(4); // doesn't run if an errors occur
+        } catch (ArithmeticException e) { // the exception matches the 'try' method exception
+            System.out.println(5); // no error -- only try runs
+        }
+        System.out.println(6); // runs
+
+//            Input input = new Inzzse enter a whole number: ");
 //        int myInt = input.getInt();
 //        System.out.println("myInt = " + myInt);
 
@@ -23,7 +27,7 @@ public class Output {
 //        double myDouble = input.getDouble();
 //        System.out.println("myDouble = " + myDouble);
 
-
-
     }
+
+
 }

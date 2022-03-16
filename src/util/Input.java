@@ -85,7 +85,6 @@ public class Input {
     }
     int getInt(){
         return this.scanner.nextInt();
-
     }
    public double getDouble(double min, double max){
         Double userDouble;
@@ -99,7 +98,6 @@ public class Input {
     }
     public double getDouble(){
         return this.scanner.nextDouble();
-
     }
 
 
