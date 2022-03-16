@@ -11,10 +11,16 @@ public class Output {
         try { // still run --  might cause an error
             System.out.println(0/0);
             System.out.println(4); // doesn't run if an errors occur
-        } catch (ArithmeticException e) { // the exception matches the 'try' method exception
+        } catch (ArithmeticException ae) { // the exception matches the 'try' method exception
             System.out.println(5); // no error -- only try runs
+        } catch (Exception e) {
+            System.out.println(6);
+        } finally {
+            System.out.println("finally exception block will always run");
         }
-        System.out.println(6); // runs
+        System.out.println(7); // runs
+
+
 
 //            Input input = new Inzzse enter a whole number: ");
 //        int myInt = input.getInt();
