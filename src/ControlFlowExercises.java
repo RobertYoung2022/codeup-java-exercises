@@ -3,7 +3,7 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.Formatter;
 
-public class ControlFlowExercises {
+/*public class ControlFlowExercises {
     public static void main(String[] args) {
 //        int i = 5;
 //        while (i <= 15) {
@@ -114,5 +114,28 @@ public class ControlFlowExercises {
             System.out.println("Okay, we'll stop here...");
         }
 
+    }
+}*/
+
+public class ControlFlowExercises {
+    public static void main(String[] args) {
+        // 1a - While
+//        int i = 5;
+//        while (i <= 15) {
+//            System.out.println(i++);
+//        }
+
+        // 1b. Do While
+//        int x = 0;
+//        do{
+//            System.out.println(x * 2);
+//            x++;
+//        } while(x <= 100);
+
+        int s = 100;
+        do{
+            System.out.println(s - 5);
+            s--;
+        } while(s >= -10);
     }
 }
